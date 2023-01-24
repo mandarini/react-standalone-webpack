@@ -5,20 +5,11 @@
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/webpack:webpack",
+      "executor": "@nrwl/vite:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "compiler": "babel",
-        "outputPath": "dist/restand55",
-        "index": "src/index.html",
-        "baseHref": "/",
-        "main": "src/main.tsx",
-        "tsConfig": "tsconfig.app.json",
-        "assets": ["src/favicon.ico", "src/assets"],
-        "styles": ["src/styles.css"],
-        "scripts": [],
-        "webpackConfig": "webpack.config.js"
+        "outputPath": "dist/restand55"
       },
       "configurations": {
         "development": {
@@ -44,7 +35,7 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/webpack:dev-server",
+      "executor": "@nrwl/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "restand55:build",
@@ -78,6 +69,21 @@
         "ci": {
           "ci": true,
           "codeCoverage": true
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nrwl/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "restand55:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "restand55:build:development"
+        },
+        "production": {
+          "buildTarget": "restand55:build:production"
         }
       }
     }
