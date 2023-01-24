@@ -1580,6 +1580,19 @@
   dependencies:
     nx "15.6.0"
 
+"@nrwl/vite@^15.6.0":
+  version "15.6.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/vite/-/vite-15.6.0.tgz#f19baa9b43418518b8ffad6069752ec45354c3fa"
+  integrity sha512-xSl4NDY3+MbMBHU9LtUs6+ggqsufi5lzXUDxI+rd1r5j8sTHABcQlq0uVqq3lHInNsrdZjdjofhbrp6oFDGlWA==
+  dependencies:
+    "@nrwl/devkit" "15.6.0"
+    "@nrwl/js" "15.6.0"
+    "@nrwl/workspace" "15.6.0"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    "@swc/helpers" "^0.4.11"
+    dotenv "~10.0.0"
+    enquirer "~2.3.6"
+
 "@nrwl/webpack@15.6.0":
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/@nrwl/webpack/-/webpack-15.6.0.tgz#fcb42ee006ba6b5383eb8bd55400884dbdba7b1a"
@@ -1814,6 +1827,13 @@
     "@svgr/core" "^6.5.1"
     "@svgr/plugin-jsx" "^6.5.1"
     "@svgr/plugin-svgo" "^6.5.1"
+
+"@swc/helpers@^0.4.11":
+  version "0.4.14"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.14.tgz#1352ac6d95e3617ccb7c1498ff019654f1e12a74"
+  integrity sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==
+  dependencies:
+    tslib "^2.4.0"
 
 "@testing-library/dom@^8.5.0":
   version "8.20.0"
